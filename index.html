@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags PWA -->
+    <meta name="theme-color" content="#333333" />
+
+    <meta name="MobileOptimized" content="whidt" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Title -->
+    <title>React CDN</title>
+
+    <!-- Script -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="./components/Contador.js"></script>
+    <script type="text/babel" src="./index.js">
+        /*
+        const Interpolar = () => {
+            return (
+                <div>
+                    <h1>Fecha: {new Date().getFullYear()}</h1>
+                    <hr />
+                </div>
+            )
+        }
+        ReactDOM.render(
+            <Interpolar />, document.getElementById("root")
+        )
+
+        const Saludo = () => {
+            return (
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            );
+        };
+
+        ReactDOM.render(
+            <Saludo />, document.getElementById("root")
+        )
+        
+        // Esto se usa para renderizar algo en pantalla
+        ReactDOM.render(
+            // crea un elemento de React, pasandole la etiuqueta html que se usara, un null y el contenido que tendra esa etiqueta
+            React.createElement("h1", null, "Hola mundo"),
+            // como segundo parametro del render se le pasa el id de la etiqueta en la cual se renderizara el elemento
+            document.getElementById("root")
+        );
+        */
+    </script>
+    <script src="./register.js"></script>
+</body>
+</html>
